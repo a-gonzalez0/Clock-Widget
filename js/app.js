@@ -1,9 +1,9 @@
-(function () {
-    function checkTime(i) {
+(() => {
+    checkTime(i) => {
         return (i < 10) ? "0" + i : i;
     }
 
-    function startTime() {
+    startTime() => {
         var today = new Date(),
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
@@ -15,7 +15,7 @@
         }, 500);
     }
 
-    function checkMeridiem() {
+    checkMeridiem() => {
     	var today = new Date(),
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
@@ -24,7 +24,7 @@
         document.getElementById("meridiem").innerHTML = meridiem;
     }
 
-    function checkDate() {
+    checkDate() => {
     	var d = new Date();
     	document.getElementById("date").innerHTML = d.toDateString();
     }
